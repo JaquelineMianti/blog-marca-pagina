@@ -1,0 +1,533 @@
+body{
+	font-family: 'Gentium Book Plus';
+	color: rgb(165, 42, 42);
+	background-color: rgba(165, 42, 42, 0.292);
+}
+
+.topo-pagina{
+	background-image: url(/img/fundo-cabecalho.png);
+	background-size: cover;	
+}
+
+.topo-pagina img{
+	width: 20%;
+	margin-left: 43%;
+}
+
+/*Inicia Menu Dropdown*/
+
+#menu-dropdown,#menu-dropdown ul,#menu-dropdown ul li,#menu-dropdown ul li a,#menu-dropdown #btn-mobile{
+	
+	border:0;
+	list-style:none;
+	line-height:1;
+	display:block;
+	position:relative;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	
+	
+}
+
+#menu-dropdown:after,#menu-dropdown > ul:after{
+
+	content:".";
+	display:block;
+	clear:both;
+	visibility:hidden;
+	line-height:0;
+	height:0;
+
+}
+
+#menu-dropdown {
+	background-color: rgba(165, 42, 42, 0.36);
+    width: 100%;
+	background-size: 500px;
+	height: 70px;
+	
+}
+
+#menu-dropdown > ul > li{ 
+	float:left;
+	margin: 0 40px;
+	}
+
+#menu-dropdown > ul > li > a{ 
+	margin-top: 10px;
+	padding:13px; 
+	font-size:1em;
+	color: rgb(165, 42, 42);	
+	background-color: rgb(245, 245, 248);
+	border:rgb(165, 42, 42) 3px solid;
+	box-shadow: 4px 4px 4px rgba(55, 35, 35, 0.682);	
+	
+	
+}
+
+#menu-dropdown > ul > li:hover > a,#menu-dropdown ul li.active a{ 
+	color:rgb(245, 245, 248) ;
+	background-color: rgb(165, 42, 42); 
+	border: rgb(245, 245, 248) 3px outset;	
+}
+
+#menu-dropdown > ul > li:hover,#menu-dropdown ul li.active:hover,#menu-dropdown ul li.active,#menu-dropdown ul li.has-sub.active:hover{
+	-webkit-transition:background .3s ease;
+	-ms-transition:background .3s ease;
+	transition:background .3s ease;
+	
+}
+
+#menu-dropdown > ul > li.has-sub > a{ 
+	padding-right:30px;
+}
+
+#menu-dropdown > ul > li.has-sub > a:after{
+
+	position:absolute;
+	top:22px;
+	right:11px;
+	width:8px;
+	height:2px;
+	display:block;
+	background:rgb(165, 42, 42);
+	content:'';
+}
+
+#menu-dropdown > ul > li.has-sub > a:before{
+
+	position:absolute;
+	top:19px;
+	right:14px;
+	display:block;
+	width:2px;
+	height:8px;
+	background:rgb(165, 42, 42);
+	content:'';
+	-webkit-transition:all .25s ease;
+	-ms-transition:all .25s ease;
+	transition:all .25s ease;
+}
+
+#menu-dropdown > ul > li.has-sub:hover > a:before{ 
+	top:23px; height:0; 
+}
+
+#menu-dropdown ul ul { 
+	position:absolute;
+	left:-9999px; 
+}
+
+#menu-dropdown ul ul li{
+	border: rgb(245, 245, 248) 1px outset;	
+	height:0;
+	text-align: center;
+	-webkit-transition:all .25s ease;
+	-ms-transition:all .25s ease;
+	background-color: rgb(165, 42, 42);
+	transition:all .25s ease;
+	
+}
+
+#menu-dropdown ul ul li:hover{ 
+	background-color: rgba(165, 42, 42, 0.36); 
+}
+
+#menu-dropdown li:hover > ul{ 
+	left:auto; 
+}
+
+#menu-dropdown li:hover > ul > li{ 
+	height:35px; 
+}
+
+
+#menu-dropdown ul ul li a{
+	padding:11px 15px;
+	width:200px;
+	font-size:1em;	
+	color: rgb(245, 245, 248);
+
+}
+
+#menu-dropdown ul ul li:hover > a,#menu-dropdown ul ul li a:hover{ 
+	background-color:rgb(245, 245, 248);
+	color: rgb(165, 42, 42);	
+	border: rgb(165, 42, 42) 2px outset;	
+	padding: 5pt;
+}
+
+/*Finaliza o Menu Dropdown*/
+
+.menu-butt{
+	width: 100%;	
+	border-radius: 5px;
+}
+
+.introducao-blog{
+	text-align: center;	
+	padding: 1%;	
+	margin-left:200px;
+	margin-top: 40px;
+	margin-bottom: 30px;	
+	background-color: rgba(245, 245, 248, 0.962);
+	box-shadow: 8px 8px 8px 8px rgba(55, 35, 35, 0.627);	
+	width: 70%;
+}
+
+.livros-2023{
+	padding: 5%;
+	text-align: center; 	
+}
+
+.lojas img{
+	width: 15% !important ;	
+	padding: 0 !important;
+	border: 0 !important;
+	box-shadow:none !important;	
+	
+}
+
+.lojas{
+	margin: 2%;
+}
+
+
+.lancamentos-left{ 	
+	float:left; 
+	background-color: rgba(165, 42, 42, 0.292);
+	margin: 1%;	
+	padding: 1%;
+	width: 80%;	
+}	
+	
+
+.lancamentos-left p{
+	width: 50%;
+	float: left; 
+	font-size: 17px;
+	text-align: left; 	
+	padding: 1%;
+	background-color: rgba(245, 245, 248, 0.962);
+	margin: 2%;		
+	box-shadow: 8px 8px 8px 8px rgba(55, 35, 35, 0.353);	
+}
+
+.lancamentos-left img{
+	width: 130px;
+	float: left;	
+	border: rgb(165, 42, 42) 5px outset;	
+	box-shadow: 5px 5px 5px 5px rgba(55, 35, 35, 0.353);			
+	margin: 2%;
+}
+
+
+.lancamentos-right{ 
+	float:right; 
+	background-color: rgba(165, 42, 42, 0.292);
+	margin: 1%;	
+	padding: 1%;
+	width: 80%;		
+}
+
+.lancamentos-right p{
+	width: 50%; 
+	float: right;
+	font-size: 17px;
+	text-align: right; 	
+	padding: 1%; 
+	background-color: rgba(245, 245, 248, 0.962);
+	margin: 2%;		
+	box-shadow: 8px 8px 8px 8px rgba(55, 35, 35, 0.353);			
+		
+}
+
+
+.lancamentos-right img{
+	width: 130px;
+	float: right;
+	border: rgb(165, 42, 42) 5px outset;	
+	box-shadow: 5px 5px 5px 5px rgba(55, 35, 35, 0.353);				
+	margin: 2%;	
+}
+
+
+.rodape{
+	background-color: rgba(245, 245, 248, 0.962);
+	border-top: rgb(165, 42, 42) 10px outset;
+	display: flex;
+	justify-content: center;	
+}
+
+.roda-img img{
+	width: 50%;
+	margin-left: 50%;
+	margin-top: 10%;		
+}
+
+.info-rodape-l{	
+	width: 15%;
+	margin-left: 20%;	
+	
+}
+
+.info-rodape-l a{
+	border: rgb(165, 42, 42) 5px outset;	
+	box-shadow: 4px 4px 4px 4px rgba(55, 35, 35, 0.353);	
+	color: rgb(165, 42, 42);
+	display: flex;
+	justify-content:center;
+	margin-bottom: 10px	
+}
+
+.info-rodape-r{
+	text-align:end;
+	padding: 3%;
+	width: 50%;
+}
+
+.botao-leia-mais {
+	background-color: rgba(245, 245, 248, 0.962);
+    color: rgb(165, 42, 42);
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s all ease-in-out;
+	margin-left: 600px;
+	border: rgb(165, 42, 42) 5px outset;	
+	box-shadow: 4px 4px rgba(55, 35, 35, 0.353);	
+}
+
+.botao-leia-mais:hover {
+    transform: scale(1.1);
+}
+
+#mais{display: none;}
+
+/* Especifico da pag sobre */
+
+.conteudo-sobre{
+	display: flex;
+	justify-content: center;
+}
+
+.animes-top{
+	width: 33%;
+}
+
+.animes-top img{
+	width: 50%;	
+	margin: 5%;
+	border: rgb(165, 42, 42) 5px outset;	
+	box-shadow: 10px 10px rgba(55, 35, 35, 0.353);	
+	
+}
+
+.biografia{
+	width: 45%;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color: rgba(245, 245, 248, 0.962);
+	padding: 3%;		
+	box-shadow: 10px 10px rgba(55, 35, 35, 0.353);	
+}
+
+.biografia img{
+	width: 25%;
+	padding-top: 1%;	
+}
+
+.animes-bottom{
+	width: 33%;
+	text-align: right;
+}
+
+.animes-bottom img{
+	width: 50%;	
+	margin: 5%;	
+	border: rgb(165, 42, 42) 5px outset;	
+	box-shadow: 10px 10px rgba(55, 35, 35, 0.353);	
+}
+
+/* Especial pag no Brasil e no mundo*/
+
+.conteudo-mundo{
+	display: flex;
+	justify-content: center;
+}
+
+.mundo-top{
+	width: 33%;
+}
+
+.mundo-top img{
+	width: 180px;
+	height: 180px;	
+	margin: 5%;		
+	
+}
+
+.no-mundo{
+	width: 50%;
+	text-align: center;
+	margin: 50px;	
+	background-color: rgba(245, 245, 248, 0.962);
+	padding: 3%;	
+	box-shadow: 10px 10px 10px 10px rgba(55, 35, 35, 0.353);			
+	font-size: large;		
+}
+
+.mundo-bottom{
+	width: 33%;
+	text-align: right;
+}
+
+.mundo-bottom img{
+	width: 180px;
+	height: 180px;	
+	margin: 5%;	
+			
+}
+
+/* Especial para viraram filme */
+
+.viraram-filme{
+	background-color: rgba(245, 245, 248, 0.962);
+	margin: 2%;
+	text-align: center;
+	font-size: large;	
+	box-shadow: 10px 10px rgba(55, 35, 35, 0.353);	
+	padding: 2%;
+}
+
+.classicos{
+	background-color: rgba(245, 245, 248, 0.516);
+	display: flex;
+	justify-content: center;
+	padding: 5%;
+	font-size: large;
+	text-align: end;
+	margin: 2%;
+	box-shadow: 4px 4px 4px 4px rgba(55, 35, 35, 0.353);	
+}
+
+.classicos img{
+	width: 50%;
+	padding: 2%;
+	border: rgb(165, 42, 42) 8px outset;
+	box-shadow: 4px 4px rgba(55, 35, 35, 0.353);	
+}
+
+.classicos p{
+	width: 50%;
+	padding: 1%;	
+}
+
+.botao-trailer {
+	background-color: rgba(245, 245, 248, 0.962);
+    color: rgb(165, 42, 42);
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s all ease-in-out;	
+	border: rgb(165, 42, 42) 5px outset;	
+	box-shadow: 4px 4px rgba(55, 35, 35, 0.353);	
+	margin: 3%;
+}
+
+.botao-trailer:hover {
+    transform: scale(1.1);
+}	
+
+/* Especial para a pag A Historia do livro*/
+
+.conteudo-historia{
+	display: flex;
+	justify-content: center;
+}
+
+.historia-top{
+	width: 20%;
+	padding: 2%;
+}
+
+.historia-top img{
+	width: 100%;	
+	margin: 1%;
+	box-shadow: 10px 10px 10px 10px rgba(82, 80, 80, 0.353);	
+	margin: 12%;
+	
+}
+
+.historia{
+	width: 80%;
+	text-align: start;
+	font-size: large;
+	margin: 5%;
+	background-color: rgba(245, 245, 248, 0.962);
+	padding: 3%;
+	border: rgb(165, 42, 42) 5px outset;
+	box-shadow: 10px 10px 10px 10px rgba(55, 35, 35, 0.353);		
+}
+
+/* Espicial para TOP categorias*/
+
+.generos{
+	
+	display: flex;
+	justify-content: center;
+	padding: 5%;
+	font-size: large;
+	text-align: start;
+	margin: 2%;
+	box-shadow: 4px 4px 4px 4px rgba(55, 35, 35, 0.353);	
+}
+
+.generos img{
+	width: 25%;
+	height: 25%;
+	margin: 2%;
+	border: rgb(165, 42, 42) 8px outset;
+	box-shadow: 4px 4px rgba(55, 35, 35, 0.353);	
+}
+
+.lojas-top img { 
+	margin-left: 500px;
+	border: 0 ;
+	width: 18%;
+	box-shadow: none;
+}
+
+.top-terror{
+	background-color: rgba(245, 245, 248, 0.962);
+	margin: 2%;
+	text-align: center;
+	font-size: large;	
+	box-shadow: 10px 10px rgba(55, 35, 35, 0.353);	
+	padding: 2%;
+}
+
+.top-fantasia{
+	background-color: rgba(245, 245, 248, 0.962);
+	margin: 2%;
+	text-align: center;
+	font-size: large;	
+	box-shadow: 10px 10px rgba(55, 35, 35, 0.353);	
+	padding: 2%;
+}
+
+.top-romance{
+	background-color: rgba(245, 245, 248, 0.962);
+	margin: 2%;
+	text-align: center;
+	font-size: large;	
+	box-shadow: 10px 10px rgba(55, 35, 35, 0.353);	
+	padding: 2%;
+}
+
